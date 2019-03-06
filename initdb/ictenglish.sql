@@ -79,8 +79,8 @@ CREATE TABLE `eurasia_ictenglish_questions_explanation` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT COMMENT '编号',
   `question` mediumtext NOT NULL COMMENT '题干',
   `answer` mediumtext NOT NULL,
-  `difficulty` varchar(255) NOT NULL,
-  `knowledge_point` varchar(255) NOT NULL,
+  `difficulty` varchar(255),
+  `knowledge_point` varchar(255),
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -100,8 +100,8 @@ CREATE TABLE `eurasia_ictenglish_questions_selection` (
   `answer_c` mediumtext NOT NULL,
   `answer_d` mediumtext NOT NULL,
   `answer` varchar(255) NOT NULL,
-  `difficulty` varchar(255) NOT NULL,
-  `knowledge_point` varchar(255) NOT NULL,
+  `difficulty` varchar(255),
+  `knowledge_point` varchar(255),
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -117,8 +117,8 @@ CREATE TABLE `eurasia_ictenglish_questions_sentencecntoen` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT COMMENT '编号',
   `question` mediumtext NOT NULL COMMENT '题干',
   `answer` mediumtext NOT NULL,
-  `difficulty` varchar(255) NOT NULL,
-  `knowledge_point` varchar(255) NOT NULL,
+  `difficulty` varchar(255),
+  `knowledge_point` varchar(255),
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -134,8 +134,8 @@ CREATE TABLE `eurasia_ictenglish_questions_sentenceentocn` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT COMMENT '编号',
   `question` mediumtext NOT NULL COMMENT '题干',
   `answer` mediumtext NOT NULL,
-  `difficulty` varchar(255) NOT NULL,
-  `knowledge_point` varchar(255) NOT NULL,
+  `difficulty` varchar(255),
+  `knowledge_point` varchar(255),
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -150,11 +150,9 @@ DROP TABLE IF EXISTS `eurasia_ictenglish_questions_torf`;
 CREATE TABLE `eurasia_ictenglish_questions_torf` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT COMMENT '编号',
   `question` mediumtext NOT NULL COMMENT '题干',
-  `answer_a` mediumtext NOT NULL,
-  `answer_b` mediumtext NOT NULL,
   `answer` mediumtext NOT NULL,
-  `difficulty` varchar(255) NOT NULL,
-  `knowledge_point` varchar(255) NOT NULL,
+  `difficulty` varchar(255),
+  `knowledge_point` varchar(255),
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -170,8 +168,8 @@ CREATE TABLE `eurasia_ictenglish_questions_wordcntoen` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT COMMENT '编号',
   `question` mediumtext NOT NULL COMMENT '题干',
   `answer` mediumtext NOT NULL,
-  `difficulty` varchar(255) NOT NULL,
-  `knowledge_point` varchar(255) NOT NULL,
+  `difficulty` varchar(255),
+  `knowledge_point` varchar(255),
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -187,8 +185,8 @@ CREATE TABLE `eurasia_ictenglish_questions_wordentocn` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT COMMENT '编号',
   `question` mediumtext NOT NULL COMMENT '题干',
   `answer` mediumtext NOT NULL,
-  `difficulty` varchar(255) NOT NULL,
-  `knowledge_point` varchar(255) NOT NULL,
+  `difficulty` varchar(255),
+  `knowledge_point` varchar(255),
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
