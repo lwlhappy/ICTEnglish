@@ -43,12 +43,15 @@ header.larry-personal-tit span{
 }
 .layui-form{
 	padding: 0px;
+	/*padding-top: 150px;*/
+	/*margin-right: 150px;*/
 }
 /* 个人信息 */
 .layui-form .layui-form-item label.layui-form-label{
 	width: 120px;
 	font-family: "Microsoft YaHei";
 }
+
 .layui-input-block{
 	margin-left: 160px;
 }
@@ -123,7 +126,7 @@ header.larry-personal-tit span{
 	padding-bottom: 20px;
 }
 .mylog-info-box .layui-tab-item{
-/* 	border: 1px solid red; */
+	/* 	border: 1px solid red; */
 }
 .layui-field-box .layui-table{
 	margin-top: 0px;
@@ -132,7 +135,7 @@ header.larry-personal-tit span{
 .layui-field-box .layui-table tr th,
 .layui-field-box .layui-table tr td{
 	text-align: center;
-/* 	padding: 0px; */
+	/* 	padding: 0px; */
 }
 .layui-field-box .layui-table tr th:first-child,
 .layui-field-box .layui-table tr td:first-child{
@@ -148,8 +151,8 @@ header.larry-personal-tit span{
 	padding: 0px;
 	text-align: left;
 }
-.table-hover tbody tr:hover{ 
-	background-color: #EEEEEE; 
+.table-hover tbody tr:hover{
+	background-color: #EEEEEE;
 }
 .layui-btn i{
 	padding-right: 5px;
@@ -171,3 +174,4 @@ header.larry-personal-tit span{
 	padding: 0px;
 	margin: 0px;
 }
+

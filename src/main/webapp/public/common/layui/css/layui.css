@@ -62,7 +62,7 @@ button, input, optgroup, option, select, textarea {
 pre {
     white-space: pre-wrap;
     white-space: -moz-pre-wrap;
-    white-space: -pre-wrap;
+    /*white-space: -pre-wrap;*/
     white-space: -o-pre-wrap;
     word-wrap: break-word
 }
@@ -640,7 +640,7 @@ a cite {
     float: left;
     display: block;
     padding: 9px 15px;
-  	width: 80px;	
+    width: 80px;
     font-weight: 400;
     text-align: right
 }
@@ -760,6 +760,11 @@ a cite {
 
 .layui-form-selected dl {
     display: block
+}
+.seleitem{
+    /*float: left;*/
+    margin-right: -150px;
+    margin-top: -50px;
 }
 
 .layui-form-checkbox, .layui-form-checkbox *, .layui-form-radio, .layui-form-radio *, .layui-form-switch {

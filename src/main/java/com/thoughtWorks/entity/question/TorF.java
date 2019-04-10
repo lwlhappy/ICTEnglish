@@ -11,13 +11,33 @@ package com.thoughtWorks.entity.question;
 
 
 public class TorF extends Question{
-
-    @Override
-    public String toString() {
-        return "TorF [id=" + id + ", question=" + question + ", answer=" + answer + ", difficulty="
-                + difficulty + ", knowledgePoint=" + knowledgePoint + "]";
+    String answerA;
+    String answerB;
+    
+    
+    public String getAnswerA() {
+        return answerA;
     }
 
 
+    public void setAnswerA(String answerA) {
+        this.answerA = answerA;
+    }
+
+
+    public String getAnswerB() {
+        return answerB;
+    }
+
+
+    public void setAnswerB(String answerB) {
+        this.answerB = answerB;
+    }
+
+
+    @Override
+    public String toString() {
+        return "TorF id = "+ id + "question = "+question+"[answerA=" + answerA + ", answerB=" + answerB + "]"+"anwser = "+answer;
+    }
     
 }

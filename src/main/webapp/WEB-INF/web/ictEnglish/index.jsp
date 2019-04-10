@@ -13,18 +13,26 @@
 </head>
 
 <body>
-    <div style="width: 80%; margin: 0 auto">
-        <p id="a1" onclick="goPaperList()" onMouseOver=this.style.color="#C1C1C1" onMouseOut=this.style.color="black"  >我的试卷
+<div class="all">
+    <div id="b1">
+        <image src="${baseurl}/img/ict.png" id="b3"></image>
+        <p id="b2">在线生成试卷系统</p>
+
         </p>
+    </div>
+    <!--         <p id="a1" onclick="goDataBasePage()" onMouseOver=this.style.color="#C1C1C1" onMouseOut=this.style.color="black"  >题库管理
+            </p> -->
+    <div>
 
-<!--         <p id="a1" onclick="goDataBasePage()" onMouseOver=this.style.color="#C1C1C1" onMouseOut=this.style.color="black"  >题库管理
-        </p> -->
+        <image src="${baseurl}/public/images/bj11.jpg" id="bground"></image>
 
-        <div id="z1">
-            <div id="a2"><p class="a2" onclick="goAddByHand()" onMouseOver=this.style.color="#C1C1C1" onMouseOut=this.style.color="black"  >手动选题</p></div>
-            <div id="a3"><p class="a3" onclick="goDataBasePage()" onMouseOver=this.style.color="#C1C1C1" onMouseOut=this.style.color="black"  >题库管理</p></div>
+        <div class="z1"> <p class="text">一款强大的在线生成试卷系统</p>
+            <div ><button class="a2" onclick="goAddByHand()" onMouseOver=this.style.color="#f6f9e5" onMouseOut=this.style.color="black"  >手动选题</button></div>
+            <div ><button class="a3" onclick="goDataBasePage()" onMouseOver=this.style.color="#F6F9E5" onMouseOut=this.style.color="black"  >题库管理</button></div>
+            <div ><button class="a5" onclick="goPaperList()" onMouseOver=this.style.color="#f6f9e5" onMouseOut=this.style.color="black"  >试卷管理</button></div>
         </div>
     </div>
+</div>
 
     <script type="text/javascript" src="${baseurl}/public/common/js/jquery-1.12.4.min.js"></script>
     <script type="text/javascript" src="${baseurl}/public/common/jsplugin/jparticle.jquery.js"></script>
@@ -37,7 +45,7 @@
     function goPaperList() {
         $.ajax({
             type: 'POST',
-            url: "${baseurl}/ictEnglish/paperList",
+            url: "${baseurl}/ictEnglish/paper/getPaperList",
             success: function ( ) {
                 window.location.href = "${baseurl}/ictEnglish/paperList";
             }
@@ -47,13 +55,6 @@
     
     function goDataBasePage() {
     	window.location.href = "${baseurl}/ictEnglish/dbPage";
-/*         $.ajax({
-            type: 'POST',
-            url: "${baseurl}/smxy/paper/getDataBase",
-            success: function ( ) {
-                window.location.href = "${baseurl}/smxy/dataBaseManage";
-            }
-        }); */
     }
     </script>
 </body>
